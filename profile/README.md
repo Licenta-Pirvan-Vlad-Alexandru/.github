@@ -4,10 +4,14 @@
 - [Despre](#about)
 - [API](#api) - [Limbaje-de-programare](#api-programming-languages) - [Baze-de-date](#api-databases)
 - [Schema Bazei de Date](#database-schema)
-- [Testare Performanță API](#api-performance-testing)
-  - SQL vs NoSQL
-  - C# vs JavaScript vs Python ( SQL )
-  - PostgreSQL vs MS SQL Server vs MySQL vs MongoDB
+- [Testare Performanță API](#api-performance-testing) 
+  - după ce apelurile API sunt efectuate, rezultatele sunt afișate într-un tabel și în grafice
+  - rezultatele sunt trimise către OpenAI API, iar răspunsul este afișat într-o fereastră de chat
+  - rezultatele sunt, de asemenea, trimise către o bază de date și pot fi vizualizate ulterior (???)
+  - ### Secțiuni
+    - SQL vs NoSQL
+    - C# vs JavaScript vs Python ( SQL )
+    - PostgreSQL vs MS SQL Server vs MySQL vs MongoDB
 
 # Limbaje de programare + baze de date:
 
