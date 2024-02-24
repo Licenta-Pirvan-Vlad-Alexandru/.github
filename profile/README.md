@@ -6,7 +6,7 @@
 - [Schema Bazei de Date](#database-schema)
 - [Testare Performanță API](#api-performance-testing) 
   - după ce apelurile API sunt efectuate, rezultatele sunt afișate într-un tabel și în grafice
-  - rezultatele sunt trimise către OpenAI API, iar răspunsul este afișat într-o fereastră de chat
+  - rezultatele testelor sunt trimise către OpenAI API, iar răspunsul este afișat într-o fereastră de chat
   - rezultatele sunt, de asemenea, trimise către o bază de date și pot fi vizualizate ulterior (???)
   - ### Secțiuni
     - SQL vs NoSQL
