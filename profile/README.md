@@ -1,26 +1,24 @@
-# Secțiuni UI
+# Licenta
+
+## Secțiuni UI
 
 - [Acasă](#home)
 - [Despre](#about)
 - [API](#api) - [Limbaje-de-programare](#api-programming-languages) - [Baze-de-date](#api-databases)
 - [Schema Bazei de Date](#database-schema)
-- [Testare Performanță API](#api-performance-testing) 
-  - după ce apelurile API sunt efectuate, rezultatele sunt afișate într-un tabel și în grafice
-  - rezultatele testelor sunt trimise către OpenAI API, iar răspunsul este afișat într-o fereastră de chat
-  - rezultatele sunt, de asemenea, trimise către o bază de date și pot fi vizualizate ulterior (???)
-  - ### Secțiuni
-    - SQL vs NoSQL
-    - C# vs JavaScript vs Python ( SQL )
-    - PostgreSQL vs MS SQL Server vs MySQL vs MongoDB
+- [Testare Performanță API](#api-performance-testing)
+  - SQL vs NoSQL
+  - C# vs JavaScript vs Python ( SQL )
+  - PostgreSQL vs MS SQL Server vs MySQL vs MongoDB
 
-# Limbaje de programare + baze de date:
+## Limbaje de programare + baze de date
 
 - JavaScript + MongoDB
 - JavaScript + PostgreSQL
 - C# + MS SQL Server
 - Python + MySQL
 
-# Aspecte Măsurabile (5M de cereri pentru 100 de conexiuni simultane):
+## Aspecte Măsurabile (5M de cereri pentru 100 de conexiuni simultane)
 
 - RPS (Cereri pe secundă)
 - Timpul necesar
@@ -29,15 +27,15 @@
 - Latență mediană
 - Latență maximă
 - Latența 25% (25% dintre cereri au fost mai rapide decât acesta)
-- Latența 50% 
-- Latența 75% 
+- Latența 50%
+- Latența 75%
 
-# Utilizare Resurse:
+### Utilizare Resurse
 
 - Utilizare medie a CPU-ului (%)
 - Utilizare medie a memoriei (MB)
 
-# Schema Bazei de Date
+## Schema Bazei de Date
 
 ### Department
 
@@ -72,6 +70,8 @@
 - customerName: string ( VarChar(255) )
 - totalAmount: decimal ( Decimal(10,2) )
 - orderItems : OrderItem[]
+- employeeId : string ( VarChar(255) )
+- employee : Employee
 
 ### OrderItem
 
@@ -87,24 +87,33 @@
 
 - id: string ( VarChar(255) )
 - name: string ( VarChar(255) )
-- description: string ( VarChar(MAX) )
+- description: string ( Text )
+- status: ProjectStatus Enum
 - employees : Employee[]
 
-## Data Types Used:
+#### ProjectStatus Enum
+
+- NotStarted
+- Active
+- Inactive
+- Completed
+
+#### Data Types Used
 
 - string: VarChar(255)
 - dateTime: DateTime
 - decimal: Decimal(10,2)
 - int: Integer
-- big string: VarChar(MAX)
+- text: Text
+- enum: Enum
 
-## One to One Relationships:
+#### One to One Relationships
 
 - Employee -> Department
 - OrderItem -> Product
 - OrderItem -> Order
 
-## One to Many Relationships:
+#### One to Many Relationships
 
 - Department -> Employee
 - Employee -> Order
@@ -113,11 +122,11 @@
 - Order -> OrderItems
 - Project -> Employee
 
-## Many to Many Relationship:
+#### Many to Many Relationship
 
 - Employee -> Project
 
-# Rute API
+## Rute API
 
 - [GET] /departamente - Obține toate departamentele cu angajați (selectează anumite atribute & filtrează după atribute & sortează după atribute & paginează & caută & include entități înrudite & include atributele entităților înrudite)
 
