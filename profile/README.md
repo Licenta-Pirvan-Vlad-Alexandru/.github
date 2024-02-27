@@ -18,7 +18,7 @@
 - C# + MS SQL Server
 - Python + MySQL
 
-## Aspecte Măsurabile (5M de cereri pentru 100 de conexiuni simultane)
+## Aspecte Măsurabile (5K de cereri pentru 100 de conexiuni simultane)
 
 - RPS (Cereri pe secundă)
 - Timpul necesar
