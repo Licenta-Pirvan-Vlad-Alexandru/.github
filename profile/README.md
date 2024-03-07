@@ -137,7 +137,7 @@ exemplu:
 GET /departments?\
 select=name,location\
 filter[name]=Marketing&filter[location]='Amsterdam'\
-sort=-created_at (- descending)\
+sort=-created_at (- descending),name\
 page=2&size=10\
 search=engineering\
 include=employees
