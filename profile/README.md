@@ -3,7 +3,7 @@
 ## Secțiuni UI
 
 - [Acasă](#home)
-- [Despre](#about)
+- [Introducere](#introduction)
 - [API](#api) - [Limbaje-de-programare](#api-programming-languages) - [Baze-de-date](#api-databases)
 - [Schema Bazei de Date](#database-schema)
 - [Testare Performanță API](#api-performance-testing)
@@ -135,12 +135,12 @@ url: GET /departments?select[selectAttributes]=&filter[name]=&sort[name]=&page[n
 exemplu:
 
 GET /departments?\
-select=name,location,employees_count\
-filter[name]=Marketing&filter[employees_count]>10\
+select=name,location\
+filter[name]=Marketing&filter[location]='Amsterdam'\
 sort=-created_at (- descending)\
 page=2&size=10\
 search=engineering\
-include=employees(name,department_id)
+include=employees
 
 - [GET] /departamente/:id - Obține un departament după ID cu angajații (selectează anumite atribute & include entități înrudite & include atributele entităților înrudite)
 
