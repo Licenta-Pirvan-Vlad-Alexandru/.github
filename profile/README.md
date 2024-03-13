@@ -18,6 +18,12 @@
 - C# + MS SQL Server
 - Python + MySQL
 
+## Testare performanta
+Request-uri server-side din aplicatia NextJs catre celelalte RESTful APIs.
+Pentru a asigura o gestionare eficientă a infrastructurii și a resurselor, fiecare aplicație din cadrul proiectului va fi rulată cu Docker. Utilizarea Docker permite să izolăm și să rulăm aplicațiile noastre în containere standardizate, care sunt portabile și ușor de configurat. Fiecare aplicație va fi însoțită de un fișier Dockerfile, care va conține instrucțiunile necesare pentru construirea unei imagini Docker. Această imagine va conține tot ce este necesar pentru a rula aplicația într-un mediu izolat și portabil. Astfel, putem asigura că aplicația va rula consistent pe orice mediu Docker compatibil, indiferent de sistemul de operare sau configurația hardware. În plus, fiecare aplicație va utiliza Docker Compose pentru gestionarea complexă a aplicației și a infrastructurii sale asociate. Docker Compose permite definirea și rularea unei aplicații compusă din mai multe containere Docker, aplicația RESTful API și baza de date.
+
+Prin integrarea Docker Compose în fluxul nostru de lucru, vom putea să gestionăm în mod eficient atât aplicația noastră principală, cât și baza de date asociată, asigurând o dezvoltare și o livrare fără probleme și fără probleme.
+
 ## Aspecte Măsurabile (5K de cereri pentru 100 de conexiuni simultane)
 
 - RPS (Cereri pe secundă)
