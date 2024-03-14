@@ -23,7 +23,7 @@ Utilizatori pot alege tipul, parametrii si numarul de request-uri facute.
 
 Request-uri server-side din aplicatia NextJs catre celelalte RESTful APIs.
 
-Dupa finalizare request-urilor, vor fi afisate grafice (#Aspecte Măsurabile (5K de cereri pentru 100 de conexiuni simultane)
+Dupa finalizare request-urilor, vor fi afisate grafice (Aspecte Măsurabile)
 
 Pentru a asigura o gestionare eficientă a infrastructurii și a resurselor, fiecare aplicație din cadrul proiectului va fi rulată cu Docker. Fiecare aplicație va fi însoțită de un fișier Dockerfile, care va conține instrucțiunile necesare pentru construirea unei imagini Docker. Această imagine va conține tot ce este necesar pentru a rula aplicația într-un mediu izolat și portabil. Astfel, este asigurat că aplicația va rula consistent pe orice mediu Docker compatibil, indiferent de sistemul de operare sau configurația hardware. În plus, fiecare aplicație va utiliza Docker Compose pentru gestionarea complexă a aplicației și a infrastructurii sale asociate. Docker Compose permite definirea și rularea unei aplicații compusă din mai multe containere Docker, aplicația RESTful API și baza de date
 
