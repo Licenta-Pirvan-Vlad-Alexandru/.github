@@ -29,7 +29,9 @@ Pentru a asigura o gestionare eficientă a infrastructurii și a resurselor, fie
 
 Prin integrarea Docker Compose, vom putea să gestionăm în mod eficient atât aplicația noastră principală, cât și baza de date asociată, asigurând o dezvoltare și o livrare fără probleme și fără probleme.
 
-## Aspecte Măsurabile (5K de cereri pentru 100 de conexiuni simultane)
+## Aspecte Măsurabile 
+
+ex.: 5K de cereri pentru 100 de conexiuni simultane
 
 - RPS (Cereri pe secundă)
 - Timpul necesar
